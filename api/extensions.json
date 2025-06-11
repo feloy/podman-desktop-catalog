@@ -529,6 +529,27 @@
       "keywords": ["bootc", "bootable", "OS", "disk"],
       "versions": [
         {
+          "version": "1.9.1",
+          "podmanDesktopVersion": "^1.18.0",
+          "preview": false,
+          "lastUpdated": "2025-05-16T00:00:00Z",
+          "ociUri": "ghcr.io/podman-desktop/podman-desktop-extension-bootc:1.9.1",
+          "files": [
+            {
+              "assetType": "icon",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/bootc/1.9.1/icon.png"
+            },
+            {
+              "assetType": "README",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/bootc/1.9.1/README.md"
+            },
+            {
+              "assetType": "LICENSE",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/bootc/1.9.1/LICENSE"
+            }
+          ]
+        },
+        {
           "version": "1.8.0",
           "podmanDesktopVersion": "^1.14.0",
           "preview": false,
@@ -868,6 +889,27 @@
       "categories": ["AI", "Machine Learning", "LLM"],
       "keywords": ["AI", "Machine Learning", "LLM"],
       "versions": [
+        {
+          "version": "1.7.2",
+          "podmanDesktopVersion": "^1.14.0",
+          "preview": false,
+          "lastUpdated": "2025-05-22T00:00:00Z",
+          "ociUri": "ghcr.io/containers/podman-desktop-extension-ai-lab:1.7.2",
+          "files": [
+            {
+              "assetType": "icon",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/ai-lab/1.7.2/icon.png"
+            },
+            {
+              "assetType": "README",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/ai-lab/1.7.2/README.md"
+            },
+            {
+              "assetType": "LICENSE",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/ai-lab/1.7.2/LICENSE"
+            }
+          ]
+        },
         {
           "version": "1.6.1",
           "podmanDesktopVersion": "^1.14.0",
@@ -1367,6 +1409,27 @@
       "keywords": ["quadlets", "podman", "podlet"],
       "versions": [
         {
+          "version": "0.10.0",
+          "podmanDesktopVersion": "^1.15.0",
+          "preview": false,
+          "lastUpdated": "2025-06-02T00:00:00Z",
+          "ociUri": "ghcr.io/podman-desktop/pd-extension-quadlet:0.10.0",
+          "files": [
+            {
+              "assetType": "icon",
+              "data": "https://registry.podman-desktop.io/api/extensions/podman-desktop/podman-quadlet/0.10.0/icon.png"
+            },
+            {
+              "assetType": "README",
+              "data": "https://registry.podman-desktop.io/api/extensions/podman-desktop/podman-quadlet/0.10.0/README.md"
+            },
+            {
+              "assetType": "LICENSE",
+              "data": "https://registry.podman-desktop.io/api/extensions/podman-desktop/podman-quadlet/0.10.0/LICENSE"
+            }
+          ]
+        },
+        {
           "version": "0.8.0",
           "podmanDesktopVersion": "^1.15.0",
           "preview": false,
@@ -1458,6 +1521,27 @@
       "keywords": ["kubernetes", "minikube", "provider", "local"],
       "versions": [
         {
+          "version": "0.4.0",
+          "podmanDesktopVersion": "^1.18.0",
+          "preview": false,
+          "lastUpdated": "2025-05-16T00:00:00Z",
+          "ociUri": "ghcr.io/minc-org/minc-extension:0.4.0",
+          "files": [
+            {
+              "assetType": "icon",
+              "data": "https://registry.podman-desktop.io/api/extensions/minc-org/minc/0.4.0/icon.png"
+            },
+            {
+              "assetType": "README",
+              "data": "https://registry.podman-desktop.io/api/extensions/minc-org/minc/0.4.0/README.md"
+            },
+            {
+              "assetType": "LICENSE",
+              "data": "https://registry.podman-desktop.io/api/extensions/minc-org/minc/0.4.0/LICENSE"
+            }
+          ]
+        },
+        {
           "version": "0.3.0",
           "podmanDesktopVersion": "^1.18.0",
           "preview": false,
@@ -1492,6 +1576,26 @@
       "categories": ["AI"],
       "keywords": ["rhel", "lightspeed"],
       "versions": [
+        {
+          "version": "0.2.0",
+          "preview": false,
+          "lastUpdated": "2025-05-19T11:00:00Z",
+          "ociUri": "ghcr.io/redhat-developer/podman-desktop-redhat-lightspeed-ext:0.2.0",
+          "files": [
+            {
+              "assetType": "icon",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/rhel-lightspeed/0.2.0/icon.png"
+            },
+            {
+              "assetType": "README",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/rhel-lightspeed/0.2.0/README.md"
+            },
+            {
+              "assetType": "LICENSE",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/rhel-lightspeed/0.2.0/LICENSE"
+            }
+          ]
+        },
         {
           "version": "0.1.0",
           "preview": false,
@@ -1529,6 +1633,40 @@
             {
               "assetType": "LICENSE",
               "data": "https://registry.podman-desktop.io/api/extensions/redhat/rhel-lightspeed/preview/LICENSE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "publisher": {
+        "publisherName": "redhat",
+        "displayName": "Red Hat"
+      },
+      "extensionName": "rhel-vms",
+      "displayName": "RHEL VMs",
+      "shortDescription": "Create Red Hat Enterprise Linux VMs easily",
+      "license": "Apache-2.0",
+      "categories": ["RHEL", "VMs"],
+      "keywords": ["rhel", "vm"],
+      "versions": [
+        {
+          "version": "0.4.0",
+          "preview": false,
+          "lastUpdated": "2025-05-12T11:00:00Z",
+          "ociUri": "ghcr.io/redhat-developer/podman-desktop-rhel-ext:0.4.0",
+          "files": [
+            {
+              "assetType": "icon",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/rhel-vms/0.4.0/icon.png"
+            },
+            {
+              "assetType": "README",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/rhel-vms/0.4.0/README.md"
+            },
+            {
+              "assetType": "LICENSE",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/rhel-vms/0.4.0/LICENSE"
             }
           ]
         }
