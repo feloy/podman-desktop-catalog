@@ -52,7 +52,11 @@ jobs:
               <(jq -r '.extensions[] | .versions[] | .ociUri' static/api/extensions.json | sort) \
               <(jq -r '.extensions[] | .versions[] | .ociUri' <(git show origin/main:static/api/extensions.json) | sort) \
             )
-            for change in $CHANGES; do
-              echo "Change: $change"
+            for ociUri in $CHANGES; do
+              echo "Changed extension: $ociUri"
+              VERSION=$(cat static/api/extensions.json | \
+                jq -c ".extensions[] | .versions[] | select(.ociUri==\"$ociUri\")" \
+              )
+              echo "Version: $VERSION"
             done
           fi
