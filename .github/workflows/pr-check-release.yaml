@@ -1,0 +1,58 @@
+#
+# Copyright (C) 2024 Red Hat, Inc.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+# SPDX-License-Identifier: Apache-2.0
+
+name: pr-check-release
+
+on: [pull_request]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.sha }}
+  cancel-in-progress: true
+
+jobs:
+  check-release:
+    name: Check release
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Extract changes from extensions.json
+        id: extract_changes
+        run: |
+          # Get the base branch from GitHub context
+          BASE_BRANCH="${{ github.base_ref }}"
+          
+          # Fetch the base branch
+          git fetch origin "$BASE_BRANCH:$BASE_BRANCH"
+          
+          # Get the diff for the specific file
+          if git diff --quiet origin/$BASE_BRANCH...HEAD -- static/api/extensions.json; then
+            echo "No changes found in static/api/extensions.json"
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "Changes found in static/api/extensions.json"
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            CHANGES=$(comm -2 -3 \
+              <(jq -r '.extensions[] | .versions[] | .ociUri' static/api/extensions.json | sort) \
+              <(jq -r '.extensions[] | .versions[] | .ociUri' <(git show origin/main:static/api/extensions.json) | sort) \
+            )
+            for change in $CHANGES; do
+              echo "Change: $change"
+            done
+          fi
