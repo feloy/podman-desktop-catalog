@@ -13,6 +13,26 @@
       "keywords": ["redhat", "authentication", "login"],
       "versions": [
         {
+          "version": "1.0.7",
+          "preview": false,
+          "lastUpdated": "2025-12-16T00:00:00Z",
+          "ociUri": "quay.io/redhat-developer/podman-desktop-redhat-account-ext:1.0.7",
+          "files": [
+            {
+              "assetType": "icon",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/redhat-authentication/1.0.7/icon.png"
+            },
+            {
+              "assetType": "README",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/redhat-authentication/1.0.7/README.md"
+            },
+            {
+              "assetType": "LICENSE",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/redhat-authentication/1.0.7/LICENSE.txt"
+            }
+          ]
+        },
+        {
           "version": "1.0.6",
           "preview": false,
           "lastUpdated": "2025-03-26T00:00:00Z",
@@ -187,6 +207,26 @@
       "keywords": ["redhat", "sandbox", "provider", "remote"],
       "versions": [
         {
+          "version": "0.0.6",
+          "ociUri": "ghcr.io/redhat-developer/podman-desktop-sandbox-ext:0.0.6",
+          "lastUpdated": "2025-12-16T00:00:00Z",
+          "preview": false,
+          "files": [
+            {
+              "assetType": "icon",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/redhat-sandbox/0.0.6/icon.png"
+            },
+            {
+              "assetType": "README",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/redhat-sandbox/0.0.6/README.md"
+            },
+            {
+              "assetType": "LICENSE",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/redhat-sandbox/0.0.6/LICENSE"
+            }
+          ]
+        },
+        {
           "version": "0.0.5",
           "ociUri": "ghcr.io/redhat-developer/podman-desktop-sandbox-ext:0.0.5",
           "lastUpdated": "2025-01-16T00:00:00Z",
@@ -260,6 +300,26 @@
       "categories": ["Kubernetes"],
       "keywords": ["OpenShift", "MicroShift", "provider", "local"],
       "versions": [
+        {
+          "version": "2.1.3",
+          "preview": false,
+          "ociUri": "ghcr.io/crc-org/crc-extension:2.1.3",
+          "lastUpdated": "2025-12-11T00:00:00Z",
+          "files": [
+            {
+              "assetType": "icon",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/openshift-local/2.1.3/icon.png"
+            },
+            {
+              "assetType": "README",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/openshift-local/2.1.3/README.md"
+            },
+            {
+              "assetType": "LICENSE",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/openshift-local/2.1.3/LICENSE.txt"
+            }
+          ]
+        },
         {
           "version": "2.0.0",
           "preview": false,
@@ -528,6 +588,27 @@
       "categories": ["Containers"],
       "keywords": ["bootc", "bootable", "OS", "disk"],
       "versions": [
+        {
+          "version": "1.11.0",
+          "podmanDesktopVersion": "^1.18.0",
+          "preview": false,
+          "lastUpdated": "2025-12-12T00:00:00Z",
+          "ociUri": "ghcr.io/podman-desktop/extension-bootc:1.11.0",
+          "files": [
+            {
+              "assetType": "icon",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/bootc/1.11.0/icon.png"
+            },
+            {
+              "assetType": "README",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/bootc/1.11.0/README.md"
+            },
+            {
+              "assetType": "LICENSE",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/bootc/1.11.0/LICENSE"
+            }
+          ]
+        },
         {
           "version": "1.10.0",
           "podmanDesktopVersion": "^1.18.0",
@@ -1791,6 +1872,26 @@
       "categories": ["RHEL", "VMs"],
       "keywords": ["rhel", "vm"],
       "versions": [
+        {
+          "version": "0.8.0",
+          "preview": false,
+          "lastUpdated": "2025-12-05T12:00:00Z",
+          "ociUri": "ghcr.io/redhat-developer/podman-desktop-rhel-ext:0.8.0",
+          "files": [
+            {
+              "assetType": "icon",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/rhel-vms/0.8.0/icon.png"
+            },
+            {
+              "assetType": "README",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/rhel-vms/0.8.0/README.md"
+            },
+            {
+              "assetType": "LICENSE",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/rhel-vms/0.8.0/LICENSE"
+            }
+          ]
+        },
         {
           "version": "0.7.0",
           "preview": false,
