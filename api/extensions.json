@@ -589,6 +589,27 @@
       "keywords": ["bootc", "bootable", "OS", "disk"],
       "versions": [
         {
+          "version": "1.13.0",
+          "podmanDesktopVersion": "^1.25.0",
+          "preview": false,
+          "lastUpdated": "2026-02-05T00:00:00Z",
+          "ociUri": "ghcr.io/podman-desktop/extension-bootc:1.13.0",
+          "files": [
+            {
+              "assetType": "icon",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/bootc/1.13.0/icon.png"
+            },
+            {
+              "assetType": "README",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/bootc/1.13.0/README.md"
+            },
+            {
+              "assetType": "LICENSE",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/bootc/1.13.0/LICENSE"
+            }
+          ]
+        },
+        {
           "version": "1.12.2",
           "podmanDesktopVersion": "^1.25.0",
           "preview": false,
@@ -1012,6 +1033,27 @@
       "categories": ["AI", "Machine Learning", "LLM"],
       "keywords": ["AI", "Machine Learning", "LLM"],
       "versions": [
+        {
+          "version": "1.9.3",
+          "podmanDesktopVersion": "^1.14.0",
+          "preview": false,
+          "lastUpdated": "2026-02-04T00:00:00Z",
+          "ociUri": "ghcr.io/containers/podman-desktop-extension-ai-lab:1.9.3",
+          "files": [
+            {
+              "assetType": "icon",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/ai-lab/1.9.3/icon.png"
+            },
+            {
+              "assetType": "README",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/ai-lab/1.9.3/README.md"
+            },
+            {
+              "assetType": "LICENSE",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/ai-lab/1.9.3/LICENSE"
+            }
+          ]
+        },
         {
           "version": "1.9.2",
           "podmanDesktopVersion": "^1.14.0",
@@ -1616,6 +1658,27 @@
       "keywords": ["quadlets", "podman", "podlet", "systemd"],
       "versions": [
         {
+          "version": "0.12.1",
+          "podmanDesktopVersion": "^1.15.0",
+          "preview": false,
+          "lastUpdated": "2026-02-02T00:00:00Z",
+          "ociUri": "ghcr.io/podman-desktop/pd-extension-quadlet:0.12.1",
+          "files": [
+            {
+              "assetType": "icon",
+              "data": "https://registry.podman-desktop.io/api/extensions/podman-desktop/podman-quadlet/0.12.1/icon.png"
+            },
+            {
+              "assetType": "README",
+              "data": "https://registry.podman-desktop.io/api/extensions/podman-desktop/podman-quadlet/0.12.1/README.md"
+            },
+            {
+              "assetType": "LICENSE",
+              "data": "https://registry.podman-desktop.io/api/extensions/podman-desktop/podman-quadlet/0.12.1/LICENSE"
+            }
+          ]
+        },
+        {
           "version": "0.12.0",
           "podmanDesktopVersion": "^1.15.0",
           "preview": false,
@@ -1957,6 +2020,26 @@
       "keywords": ["rhel", "vm"],
       "versions": [
         {
+          "version": "0.10.0",
+          "preview": false,
+          "lastUpdated": "2026-01-30T12:00:00Z",
+          "ociUri": "ghcr.io/redhat-developer/podman-desktop-rhel-ext:0.10.0",
+          "files": [
+            {
+              "assetType": "icon",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/rhel-vms/0.10.0/icon.png"
+            },
+            {
+              "assetType": "README",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/rhel-vms/0.10.0/README.md"
+            },
+            {
+              "assetType": "LICENSE",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/rhel-vms/0.10.0/LICENSE"
+            }
+          ]
+        },
+        {
           "version": "0.9.0",
           "preview": false,
           "lastUpdated": "2026-01-16T12:00:00Z",
@@ -2050,6 +2133,27 @@
       "categories": ["Database"],
       "keywords": ["database", "connection", "discover"],
       "versions": [
+        {
+          "version": "0.5.0",
+          "podmanDesktopVersion": "^1.16.0",
+          "preview": false,
+          "lastUpdated": "2026-01-28T08:00:00Z",
+          "ociUri": "ghcr.io/podman-desktop/extension-postgresql:0.5.0",
+          "files": [
+            {
+              "assetType": "icon",
+              "data": "https://registry.podman-desktop.io/api/extensions/podman-desktop/postgresql/0.5.0/icon.png"
+            },
+            {
+              "assetType": "README",
+              "data": "https://registry.podman-desktop.io/api/extensions/podman-desktop/postgresql/0.5.0/README.md"
+            },
+            {
+              "assetType": "LICENSE",
+              "data": "https://registry.podman-desktop.io/api/extensions/podman-desktop/postgresql/0.5.0/LICENSE"
+            }
+          ]
+        },
         {
           "version": "0.4.0",
           "podmanDesktopVersion": "^1.16.0",
